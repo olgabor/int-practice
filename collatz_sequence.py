@@ -24,14 +24,13 @@ def collatz(number):
     elif number % 2 == 1: 
         return 3 * (number + 1)
 
-
 number = input('type number: ')
+value = collatz(int(number)) 
 
-value = collatz(int(number))
 while value !=1: 
+    number = input('type number: ')
     value = collatz(int(number))
-    print(collatz(int(number)))
-
+    print(value)
     
 
     
