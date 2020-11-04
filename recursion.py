@@ -18,4 +18,4 @@ def is_palindrome(word):
         return is_palindrome(word[1:-1])
     
 
-print(is_palindrome("tacocat") )
+print(is_palindrome("tacocat"))

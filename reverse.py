@@ -2,9 +2,12 @@
 
 def reverse(word ):
     tmp = ''  
-    if len(word) == 0: 
+    if type(word) != str:
+        # raise ValueError ('This is not a string')
+        return 'This is not a string'
+    elif len(word) == 0: 
         return  ''
-    if len(word) < 1: 
+    elif len(word) < 1: 
         return word 
     else: 
         tmp = word[-1]
@@ -17,3 +20,4 @@ print(reverse("ab")) # "ba")
 print(reverse("computer"))
 print(reverse("abcdefghijklmnopqrstuvwxyz")) # "zyxwvutsrqponmlkjihgfedcba"
 print(reverse(reverse("computer"))) # "computer"
+print(reverse(2)) #'This is not a string'
