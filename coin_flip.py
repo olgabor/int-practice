@@ -1,3 +1,4 @@
+
 #write a program to find out how often streak of six heads or streak of six tails 
 # comes up in a randomly generated list of heads and tails
 
