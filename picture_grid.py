@@ -1,5 +1,10 @@
-height = 9
-width = 6
+# print the image 
+# ..OO.OO..
+# .OOOOOOO.
+# .OOOOOOO.
+# ..OOOOO..
+# ...OOO...
+# ....O....
 
 grid = [['.', '.', '.', '.', '.', '.'], 
         ['.', 'O', 'O', '.', '.', '.'], 
@@ -11,14 +16,8 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'], 
         ['.', '.', '.', '.', '.', '.']]
 
-for x in range(len(grid)):
-    
 
-    # print((grid[x]))
-    for y in range(len(grid[x])): 
-        # print( len(grid) , len(grid[x]) )
-        print( 'bla' , end='') 
-        
-print(grid[8][5])
-     
-
+for y in range(len(grid[0])):
+        for x in range(len(grid)):
+                print(grid[x][y], end='')
+        print('')

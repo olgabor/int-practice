@@ -2,9 +2,6 @@
 
 #You may assume that each input would have exactly one solution, and you may not use the same element twice.
 #You can return the answer in any order.
-
- 
-
 #Example 1:
 
 nums = [2,7,11,15]
@@ -17,8 +14,8 @@ target = 9
 def two_sum(nums, target): 
     output = []
     for i in range(len(nums)):
-        if nums[i] + nums[i + 1] == target:
-            return i , i+1 
+        if nums[i] < target: 
+
     
 print(two_sum(nums, target))
 print(two_sum(nums1, target))
