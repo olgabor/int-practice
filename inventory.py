@@ -39,4 +39,19 @@ print(displayInventory(nums))
 print(displayInventory(fruit))
     
 
+#write a function named addsToInventory() that takes the list and adds it to main inventory dictionary 
+addStuff = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 
+def addsToInventory(inventory, addStuff):
+
+    for item in addStuff:
+        inventory.setdefault(item, 0) 
+        inventory[item] = inventory[item] + 1 
+
+    return inventory
+    
+inv = addsToInventory(stuff, addStuff) 
+
+#display updated inventory 
+print(displayInventory(inv))
+        
