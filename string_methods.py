@@ -6,6 +6,8 @@ print(spam[:-5])
 print(spam[7:])
 print(spam[-2:])
 print(spam[:-2])
+print(spam[1:])
+
 
 #validate user imput examples 
 while True: 
