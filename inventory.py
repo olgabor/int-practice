@@ -52,6 +52,6 @@ def addsToInventory(inventory, addStuff):
     
 inv = addsToInventory(stuff, addStuff) 
 
-#display updated inventory 
+#display updated inventory
 print(displayInventory(inv))
         
