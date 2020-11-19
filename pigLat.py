@@ -1,6 +1,6 @@
 #English to Pig Latin: 
 # if a word begins with vowel - the word 'yay' is added to the end of it. 
-#if a word begins with consonant or consonant cluster (like ch it gr) - that consonant is moved 
+#if a word begins with consonant or consonant cluster (like ch it gr) - that consonant or cluster is moved 
 #to the end of the word folowed by 'ay'
 
 print('Enter the English message to translate into Pig Latin:') 
