@@ -20,7 +20,7 @@ def insertionSort (array):
                 if array[i+1] < tempList[j]:
                         array[j] = array[i+1] 
                         array[i+1] =  tempList[j]
-                        print(tempList, array)
+                        
         
     return array 
            
