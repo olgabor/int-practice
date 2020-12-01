@@ -19,8 +19,8 @@ def numJewelsInStones(J, S):
 print(numJewelsInStones(J='aA', S='aAAbbbb'))
 print(numJewelsInStones(J='z', S='ZZ'))
 
+#recursive version 
 def numJewelsInStonesRecursion(J, S): 
-    
     count = 0 
     if len(S) == 0:
         return count 
