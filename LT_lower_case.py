@@ -7,6 +7,8 @@
 
 
 def toLowerCase(inp):
+    if type(inp) not in [str]:
+        raise TypeError('Parameter should be string')
     if len(inp) == 0:
         return 'string is empty'
     else: 
@@ -23,3 +25,5 @@ print(toLowerCase("LOVELY"))
 print(toLowerCase("al&phaBET"))
 print(toLowerCase("PiTAs"))
 print(toLowerCase("PiTAs24<<<<"))
+print(toLowerCase(""))
+print(toLowerCase(12))
