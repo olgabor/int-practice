@@ -16,7 +16,6 @@ def kidsWithCandies(candies, extraCandies):
         if candies[i] > max_val:
             max_val = candies[i]
 
-       
     for i in range(len(candies)):
         if not (candies[i] + extraCandies) >= max_val:
             candies[i] = False  

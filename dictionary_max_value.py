@@ -1,4 +1,4 @@
-#"write a function to return the key of the largest value in an object of key=>value pairs."  
+#write a function to return the key of the largest value in an object of key=>value pairs  
 sample_dict = {
   "val1": 5,
   "val2": 0,
@@ -15,8 +15,7 @@ def dict_max_val(sample_dict):
 
     return max_val
 
-print( dict_max_val(sample_dict))
+print(dict_max_val(sample_dict))
 
 #faster solution 
-
 print(max(sample_dict, key=sample_dict.get))

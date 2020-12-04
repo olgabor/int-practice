@@ -13,20 +13,12 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
              ['Alice', 'Bob', 'Carol', 'David'],
              ['dogs', 'cats', 'moose', 'goose']] 
 
-.rjust() ljust() center()  
-
 def printTable(tableData):
-
-
-
-
-
 
     #find the max value of each inner string and write it dowm 
     # to colWidth list create colWidth list with integers, equivalent to len(tableData)
     colWidth = [0] * len(tableData)
     
-
     #iterate over each element in inner list replace the value in colWith if length of
     #  inner list value is larger than colWidth value corresponding same index
     for i in range(len(tableData)):

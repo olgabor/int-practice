@@ -1,22 +1,13 @@
-# import sys 
+#-----------------------------------------------------------
+# Write a function named collatz() that has one parameter named number. 
+# If the number is even, then collatz() should print number // 2 and return this value. 
+# If the number is odd, then collatz() should print and return 3 * number + 1. 
+# Then write a program that lets the user type in an integer and that keeps calling collatz() on that 
+# number until the function returns the value 1.
+#The output of this program could look something like this:
 
-# def collatz(): 
-#     outcome =  0 
-#     while outcome != 1:
-#         try: 
-#             number = input('Enter the number: ')
-
-#             if int(number) % 2 == 0:
-#                 outcome == int(number) // 2 
-#             elif int(number) % 2 == 1:
-#                 outcome ==  (3 * (int(number) + 1 ))
-
-#         except ValueError:  
-#             print('please enter a number')
-
-
-
-# print(collatz())
+#Enter number: 3 10 5 16 8 4 2 1 
+# -----------------------------------------------------------
 
 def collatz(number):
     if number % 2 == 0:
