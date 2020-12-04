@@ -19,7 +19,7 @@ def runningSumFaster(nums):
     for i in range(1, len(nums)):
         nums[i] = nums[i] + nums[i-1]
         
-    return nums 
+    return nums
 
 print(runningSumFaster([3,1,2,10,1]))
 print(runningSumFaster([1,2,3,4]))
