@@ -22,6 +22,3 @@ print(subtractProductAndSum(234))
 print(subtractProductAndSum(4421))
 print(subtractProductAndSum('number'))
 print(subtractProductAndSum(9.8))
-
-
-
