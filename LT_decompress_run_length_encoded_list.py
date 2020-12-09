@@ -26,6 +26,12 @@ def decompressRLElist(nums):
         
     return decompressed_list 
 
+print(decompressRLElist([1,2,3,4]))
+print(decompressRLElist([1,1,2,3]))
+print(decompressRLElist([42,39]))
+print(decompressRLElist([55,11,70,26,62,64]))
+print(decompressRLElist([5,27,44,42,53,6,55,64]))
+
 def decompressedL(nums):
     decompressed_list = []
     i = 0 
@@ -36,26 +42,5 @@ def decompressedL(nums):
     return decompressed_list
 
 
-
 print(decompressedL([1,2,3,4]))
 print(decompressedL([42,39]))
-
-
-
-# print(decompressRLElist([1,2,3,4]))
-# print(decompressRLElist([1,1,2,3]))
-# print(decompressRLElist([42,39]))
-# print(decompressRLElist([55,11,70,26,62,64]))
-# print(decompressRLElist([5,27,44,42,53,6,55,64]))
-
-
-
-# b = [5,27,44,42,53,6,55,64]
-# l = len(b)/2
-# k = len(b[:-2])
-# print(b)
-# i = 0 
-# while i <= (len(b) /2) -1:
-#     print(i)
-#     print(2*i, (2*i)+1 )
-#     i+= 1 
