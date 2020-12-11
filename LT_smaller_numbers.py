@@ -22,20 +22,3 @@ def smallerNumber(nums):
 if smallerNumber([8,1,2,2,3]) == [4,0,1,1,3]: print(True)
 if smallerNumber([6,5,4,8]) == [2,1,0,3]: print(True)
 if smallerNumber([7,7,7,7]) == [0,0,0,0]: print(True)
-
-
-def smallerNumberSort(nums):
-    n = copy.deepcopy(nums)
-    nums.sort( reverse= True)
-
-    i = 0 
-
-    while i < len(nums):
-        if nums[i] == nums[i+1]: 
-            nums[i] = len(nums) - (nums.index(nums[i]) + 2)
-        else: 
-            nums[i] = len(nums) - nums.index(nums[i])
-        i +=1 
-    return nums
-
-print(smallerNumberSort([8,1,2,2,3]))
