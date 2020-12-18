@@ -4,6 +4,7 @@ n = 4
 k = 2
 arr = [80, -50, 90, 100 ]
 
+#brute force 
 def maxSumBruteForce(arr, n, k):
     max_sum = 0 
     for i in range(0, (n - k + 1)): 
@@ -18,6 +19,7 @@ def maxSumBruteForce(arr, n, k):
 
 print(maxSumBruteForce(arr, n, k))
 
+#sliding window technique 
 def maxSumSlidingWindow(arr,k): 
     arraySize = len(arr)
     if arraySize <= k:
@@ -28,7 +30,6 @@ def maxSumSlidingWindow(arr,k):
     max_sum = window_sum 
 
     for i in range(arraySize-k): 
-        print(i)
         window_sum = window_sum - arr[i] + arr[ i + k]
         max_sum = max(window_sum, max_sum)
 
