@@ -21,3 +21,6 @@ def binarySearch(nums, target):
 print(binarySearch([10, 11, 12, 13, 14, 15, 16], 1))
 print(binarySearch([10, 11, 12, 13, 14, 15, 16], 10))
 print(binarySearch([10, 11, 12, 13, 14, 15, 16], 15))
+
+#time complexity => O(log(n)) 
+#space complexity => O(1)
