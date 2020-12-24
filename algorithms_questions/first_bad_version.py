@@ -19,11 +19,8 @@ def firstBadversion(n):
         mid = (right + left) // 2 
         
         if isBadVersion(mid) == True:
-            right = mid 
+            right = mid #move right pointer to mid since we found a first bad version and need to iterate through all elemets till mid 
         else: 
-            left = mid +1 
+            left = mid +1 #if the version is not BAD ignore all elemets before it and start searching from mid+1  
 
     return left 
-
-
-

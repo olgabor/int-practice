@@ -43,4 +43,61 @@ def searchRange(nums, target):
 # print(searchRange([5,7,7,8,8,10] , 8))
 # print(searchRange([5,7,7,8,8,10] , 6))
 
-print(2//2)
+
+def searchRange1(nums, target):
+    result = []
+
+    left = 0 
+    right = len(nums) -1 
+    print(right)
+    while left < right:
+
+        mid = (left +right) // 2 
+        if nums[mid] > target: 
+            right = mid 
+        if nums[mid] < target: 
+            left = mid 
+
+        
+
+        # if nums[mid] == target:
+        #     result.append(mid) 
+        #     left = mid + 1 
+        if nums[mid] == target:
+            if nums[mid+1] != target:
+                result.append(mid) 
+                right = mid
+            if  nums[mid-1] != target:
+                result.append(mid) 
+                left  = mid
+            if mid == 1 and nums[mid -1] != target:
+                return result
+  
+
+     
+                
+
+        # if nums[mid] == target and nums[mid +1] != target:
+        #     result.append(mid)
+        #     right = mid 
+            # if mid == 0: 
+            #     result.append(mid)
+            # if nums[mid +1] != target:
+            #     result.append(mid)
+            #     right = mid 
+            #  if nums[mid -1 ] == target:
+            #     left = mid
+         
+
+                
+
+        # if nums[mid] == target and nums[mid +1] == target: 
+        #     result.append(mid)
+        #     left = mid
+        
+
+    return result 
+
+# print( searchRange1([5,7,7,8,8,10] , 8)) 
+print( searchRange1([5,7,7,8,8,8,10] , 8)) 
+print(searchRange1([5,7,7,8,8,10] , 7))
