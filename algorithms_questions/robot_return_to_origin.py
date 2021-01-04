@@ -9,7 +9,7 @@
 # "L" will always make it move left, etc. Also, assume that the magnitude of the robot's movement is the same for each move.
 
 
-#Time complexity O(n)
+#Time complexity O(n), Space complexity O(n)
 def judgeCircle(moves):
 
     x = y = 0 
