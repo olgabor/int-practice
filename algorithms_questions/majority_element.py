@@ -29,3 +29,15 @@ def majorityElement_version_1(nums):
 
 print(majorityElement_version_1([3,2,3]))
 print(majorityElement_version_1([2,2,1,1,1,2,2]))
+
+def func(num):
+    if num == 0:
+        return 1
+    return num * func(num - 2)
+
+print(func(8))
+
+print([(x**2) for x in range(0, 10)])
+print([(2**x) for x in range(0, 10)])
+print([(2**x) for x in range(1, 10)])
+print([(x**2) for x in range(1, 10)])
