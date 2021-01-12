@@ -1,13 +1,11 @@
 #list comprehensions 
-print([(x**2) for x in range(0, 10)]) #0**2=>0, 1**2=> 1, 2**2=>4, 3**2=> 9, 
-print([(2**x) for x in range(0, 10)]) #2**0=> 1, 2**1=> 2, 2**3=> 64  , 
-print([(2**x) for x in range(1, 10)])
-print([(x**2) for x in range(1, 10)])
+print([(x**2) for x in range(0, 10)]) #[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+print([(2**x) for x in range(0, 10)]) #[1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+print([(2**x) for x in range(1, 10)]) #[2, 4, 8, 16, 32, 64, 128, 256, 512]
+print([(x**2) for x in range(1, 10)]) #[1, 4, 9, 16, 25, 36, 49, 64, 81]
 
-print(2**3)
 #fuctorial with recursion 
 def factorial(num):
-
     if num == 1: 
         return num 
     else: 

@@ -37,7 +37,5 @@ def func(num):
 
 print(func(8))
 
-print([(x**2) for x in range(0, 10)])
-print([(2**x) for x in range(0, 10)])
-print([(2**x) for x in range(1, 10)])
-print([(x**2) for x in range(1, 10)])
+s = 'dog'
+print(s.split('dog'))
