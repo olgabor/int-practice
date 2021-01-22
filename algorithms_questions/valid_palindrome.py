@@ -41,4 +41,3 @@ def validPalindromeRecursion(str):
     return True 
 
 print(validPalindromeRecursion("tacocat"))
-
