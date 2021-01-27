@@ -18,3 +18,4 @@ def sortedSquares(nums):
 
 
 print(sortedSquares([-4,-1,0,3,10]))
+print('hello'[0])
