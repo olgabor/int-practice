@@ -16,6 +16,23 @@ def sortedSquares(nums):
     output.sort() 
     return output 
 
-
 print(sortedSquares([-4,-1,0,3,10]))
-print('hello'[0])
+
+def sortedSquaresBinary(A):
+        
+  result = [0] * len(A)
+  l, r = 0, len(A) - 1
+        
+  while l <= r:
+    left, right = abs(A[l]), abs(A[r])
+    if left > right:
+      result[r - l] = left * left
+      l += 1
+    else:
+      result[r - l] = right * right
+      r -= 1
+        
+  return result
+
+nums = [-4,-1,0,3,10]
+print(sortedSquaresBinary(nums))

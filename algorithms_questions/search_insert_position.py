@@ -32,23 +32,26 @@ def insertPosition(nums, target):
 # print(insertPosition([5, 6, 8, 10], 1)) 
 
 
+#time complexity is O(log(n))
+
 def insertPostionBinary(nums, target): 
 
     right, left = 0, len(nums) - 1 
 
-    while right < left: 
+    while right <= left: 
         
         mid = left - right // 2 
-        
+        print('left, right, mid', left, right, mid)
         if nums[mid] == target: 
             return mid 
         if nums[mid] > target: 
             left -= 1 
         if nums[mid] < target: 
             right += 1 
-   
-    return left 
+    
+    return mid 
 
-print(insertPostionBinary([5, 6, 8, 10], 1)) 
-print(insertPostionBinary([1,2,5,6], 3))
-print(insertPostionBinary([1,2,5,6], 5 ))
+# print(insertPostionBinary([5, 6, 8, 10], 1)) 
+# print(insertPostionBinary([1,2,5,6], 3))
+# print(insertPostionBinary([1,2,5,6], 5 ))
+print(insertPostionBinary([1,3,5,6], 7 ))
