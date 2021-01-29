@@ -38,3 +38,19 @@ def twoSumHashmap(nums, target):
 print(twoSumHashmap(nums, 9))
 print(twoSumHashmap(nums1, 6))
 print(twoSumHashmap(nums2, 6))
+
+def two(nums, target):
+
+    d = {}
+
+    for i in range(len(nums)):
+
+        diff = target - nums[i] 
+
+        if diff in d: 
+            return d[diff], i
+        else: 
+            d[nums[i]] = i 
+
+
+print(two([2, 7, 11, 15], 9))
