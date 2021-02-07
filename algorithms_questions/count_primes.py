@@ -24,14 +24,14 @@ def countPrime(n):
 
     return count 
 
-print(countPrime(10)) #4
-print(countPrime(0)) #0
-print(countPrime(1)) #0
+# print(countPrime(10)) #4
+# print(countPrime(0)) #0
+# print(countPrime(1)) #0
 # print(countPrime(499979)) #0
 
 
 import math
-#fast solution - Sieve of Eratosthenes Algorithm 
+#faster solution - Sieve of Eratosthenes Algorithm 
 #steps: 
   # 1. Define the boolean array of size n and set all elements to True except 0, 1
   #    isPrime = [False, False, True, True, True] 
@@ -48,9 +48,9 @@ def countPrimeFast(n):
     
     isPrime = [True] * n 
     isPrime[0] = isPrime[1] = False 
-
+    
     for i in range(2, int(math.ceil(math.sqrt(n)))): 
-        print('i:' , i  )
+        print('i:' , i , 'int(math.ceil(math.sqrt(n)))', int(math.ceil(math.sqrt(n))), 'n', n  )
         if isPrime[i]:
             print( 'i:', i , isPrime[i])
             for multiples_of_i in range(i*i, n, i):
@@ -59,8 +59,6 @@ def countPrimeFast(n):
         
     return sum(isPrime)
 
-# # print(countPrimeFast(499979)) #41537 
-# # print(countPrimeFast(10)) #41537 
-# print(countPrimeFast(10)) #4
+# print(countPrimeFast(499979)) #41537 
 
-
+print(countPrimeFast(10)) #4

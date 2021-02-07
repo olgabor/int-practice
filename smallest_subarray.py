@@ -36,10 +36,33 @@ def smallest_subarray_with_given_sum(arr,s):
   
     return min_length
 
-print(smallest_subarray_with_given_sum([2, 1, 5, 2, 3, 2], 7 ))
+# print(smallest_subarray_with_given_sum([2, 1, 5, 2, 3, 2], 7 ))
 
 
 def smallestSubarray(nums, s):
-    pass 
+    pass
 
-print(smallestSubarray([2, 1, 5, 2, 3, 2], 7 ))
+    #define min_lenght = math.inf - i will comapare this number with curent array length 
+    #define the current_sum = 0 this will be used to calculate the sum on ebery iteration in for loop 
+    # define the variable to hold the window end 
+
+    # start the for loop for nums current_index: 
+        # current_sum += nums[current_index]
+
+        # start the while loop which will stop only if number is less or equals to given s: 
+        # while current_sum >= s: 
+            # calculate the length of current window where sum is greater or equal to s 
+            # 
+
+# print(smallestSubarray([2, 1, 5, 2, 3, 2], 7 ))
+
+l = []
+for i in range(10): 
+    for j in range(10):
+        # if i != j: 
+        l.append(str(i) + str(j))
+            # print(i , j )
+print(len(l))
+
+k = [(str(i) + str(j)) for (i, j) in range(10) if j != i  ]
+ 

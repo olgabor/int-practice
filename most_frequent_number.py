@@ -85,12 +85,19 @@ def most_freq2(List):
 List = [2, 1, 2, 2, 1, 3, 5,5,5,5,5,4,5,4,7]
 # print(most_freq2(List))
 
+## find the most requent value with .setdefault dictionary method: 
+  # initiate empty dictionary, counter and most_common variables  
+  # start the for loop 
+  # for each number in the list .setdefault(list number , zero) will set {list_number, zero} to each number in the list 
+  # as item appears in list again increase the value by 1 in dictionary d[list_number] += 1
+  # at each itearation compare the count variable to d[list_number] 
+    # if it is smaler replace the counter value with d[list_number] 
+    # replace the value of most_common with curernt number in the list 
 def mostCommonDefault(List): 
   d = {}
   count = 0
   most_common = 0
   
-
   for i in List:
     d.setdefault(i, 0)
     d[i] += 1 

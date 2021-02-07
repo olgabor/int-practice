@@ -51,3 +51,12 @@ def singleNumberList(nums):
     return n.pop()
             
 print(singleNumberList([2,2,1]))
+
+#use count method - time compexity O(n) 
+def singleNumberCount(nums):
+
+    for elem in nums: 
+        if nums.count(elem) == 1: 
+            return elem
+
+print(singleNumberCount([2,2,1]))

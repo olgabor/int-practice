@@ -83,3 +83,5 @@ def addBinaryFaster(a,b):
     return ''.join(reversed(result))
 
 print(addBinaryFaster("1111", "1111"))
+
+print((2 % 2)) 
