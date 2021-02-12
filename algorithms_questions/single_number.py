@@ -3,8 +3,7 @@
 # Follow up: Could you implement a solution with a linear runtime complexity and without using extra memory?
 # -----------------------------------------------------------
 
-#math formula - 2∗(a+b+c)−(a+a+b+b+c)=c
-
+#math formula - 2*(a+b+c)−(a+a+b+b+c) = c
 def singleNumber(nums): 
 
     return 2* sum(set(nums)) - sum(nums)
