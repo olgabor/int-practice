@@ -30,7 +30,7 @@ def maxProfitOneTransaction(prices):
 # loop through all numbers and compare the differences between the current number and next one in the list 
 # keep comparing the max_number and current difference  
 # return the max difference beetween numbers 
-print(maxProfitBruteForce([7,6,4,3,1]))
+
 def maxProfitBruteForce(prices):
     max_profit = 0 
     for i in range(len(prices)): 
@@ -39,5 +39,24 @@ def maxProfitBruteForce(prices):
     
     return max_profit
 
-print(maxProfitBruteForce([7,1,5,3,6,4]))
-print(maxProfitBruteForce([1,2]))
+# print(maxProfitBruteForce([7,1,5,3,6,4]))
+# print(maxProfitBruteForce([1,2]))
+# print(maxProfitBruteForce([7,6,4,3,1]))
+def bruteforce(prices): 
+
+    max_profit = 0 
+    buy = prices[0]
+
+    for i in range( 1, len(prices)): 
+
+        if prices[i] < buy: 
+            buy = prices[i]
+
+        if prices[i] - buy > max_profit: 
+            max_profit  = prices[i] - buy
+
+    return max_profit
+    
+    
+
+print(bruteforce([7,1,5,3,6,4]))
