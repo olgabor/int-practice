@@ -68,8 +68,7 @@ def testmaxProfit(prices):
     while (i < len(prices) - 1): 
     
         while (i < (len(prices) - 1)  and prices[i] > prices[i + 1]): 
-            print('line 71' , prices[i])
-            
+
             i += 1 
             valley = prices[i]
         

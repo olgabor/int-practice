@@ -69,3 +69,100 @@ def printMatrix( mat):
 
 mat = [[1,2,3, 'a', 'b'], [4,5,6, 'c', 'd'], [7,8,9, 'e', 'f']]
 # printMatrix(mat)
+
+
+#print matrix zigzag 
+def print_spriral_matrix(m):
+
+	if not m:
+		return None
+
+	start_row = 0
+	start_col = 0
+	end_row = len(m) - 1
+	end_col = len(m[0]) - 1
+
+
+	while start_row < end_row and start_col < end_col:
+
+		# right
+		for j in range(start_col, end_col):
+			print(m[start_row][j], end = " ")
+
+		# down
+		for j in range(start_row, end_row):
+			print(m[j][end_col], end = " ")
+
+		# left
+		for j in range(end_col, start_col, -1):
+			print(m[end_row][j], end = " ")
+
+		# up
+		for j in range(end_row, start_row, -1):
+			print(m[j][start_col] , end = " ")
+
+		start_col += 1
+		start_row += 1
+		end_col -= 1
+		end_row -= 1
+
+	if start_col == end_col and start_row == end_row:
+		print(m[start_row][start_col])
+	elif start_row < end_row:
+		for j in range(start_row, end_row + 1):
+			print(m[j][end_col], end = " ")
+	elif start_col < end_col:
+		for j in range(start_col, end_col + 1):
+			print(m[start_row][j], end = " ")
+
+
+	print()
+	print("-----------------")
+
+def print_m(m):
+	for r in m:
+		print(r)
+
+
+
+
+m = [
+	[1,2,3],
+	[4,5,6],
+	[7,8,9]
+]
+print_m(m)
+print_spriral_matrix(m)
+
+m = [
+	[1,2,3,4,5,6,7],
+	[8,9,10,11,12,13,14],
+	[15,16,17,18,19,20,21]
+]
+print_m(m)
+print_spriral_matrix(m)
+
+
+m=[
+	[1],
+	[2]
+]
+print_m(m)
+print_spriral_matrix(m)
+
+
+m = [
+	[1,2,3,4],
+	[5,6,7,8],
+	[9,10,11,12],
+	[13,14,15,16]
+]
+print_m(m)
+print_spriral_matrix(m)
+
+m=[
+	[1,2],
+	[3,4]
+]
+print_m(m)
+print_spriral_matrix(m)
