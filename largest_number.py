@@ -26,7 +26,7 @@ def largestNumber(num):
     for k,v in sorted(d.items()):
         for i in range(v):
             output = output + str(k)
-    print(type(output))
+
     return ''.join(reversed(output))
 
 

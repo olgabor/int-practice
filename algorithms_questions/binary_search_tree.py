@@ -16,6 +16,7 @@ class Node:
         self.right = None 
         self.data = value #whatever value we create the node with 
     
+    
     def insert(root,node): #root of the tree and Node 
         if (root is None): 
             root = node 
@@ -24,12 +25,13 @@ class Node:
             if(root.right is None): 
                 root.right = node 
             else: 
-                self.insert(root.right, node)
+                insert(root.right, node)
         else:
             if(root.left is None):
                 root.left = node 
             else:
                 insert(root.left, node)
+
 
     def preorder(node):
         if (node is not None):

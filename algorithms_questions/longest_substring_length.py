@@ -33,7 +33,7 @@ def bruteforce(s):
         else:
             temp.append(i)
         
-        ans= (max(ans, len(temp)))
+        ans= (max(ans, len(temp))) 
 
     return ans
 

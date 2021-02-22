@@ -38,4 +38,4 @@ def func(num):
 print(func(8))
 
 s = 'dog'
-print(s.split('dog'))
+print(s.split('dog').join)

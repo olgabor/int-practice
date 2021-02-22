@@ -11,7 +11,7 @@ try:
         if indentIncreasing: 
             #increase th enumber of spaces: 
             indent = indent + 1 
-            if indent == 20: 
+            if indent == 20: ≈
                 # Change direction 
                 indentIncreasing = False
         
@@ -24,6 +24,3 @@ try:
 
 except KeyboardInterrupt: 
     sys.exit()
-
-
-

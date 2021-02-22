@@ -55,14 +55,3 @@ def smallestSubarray(nums, s):
             # 
 
 # print(smallestSubarray([2, 1, 5, 2, 3, 2], 7 ))
-
-l = []
-for i in range(10): 
-    for j in range(10):
-        # if i != j: 
-        l.append(str(i) + str(j))
-            # print(i , j )
-print(len(l))
-
-k = [(str(i) + str(j)) for (i, j) in range(10) if j != i  ]
- 

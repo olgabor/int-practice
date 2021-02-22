@@ -42,21 +42,3 @@ def maxProfitBruteForce(prices):
 # print(maxProfitBruteForce([7,1,5,3,6,4]))
 # print(maxProfitBruteForce([1,2]))
 # print(maxProfitBruteForce([7,6,4,3,1]))
-def bruteforce(prices): 
-
-    max_profit = 0 
-    buy = prices[0]
-
-    for i in range( 1, len(prices)): 
-
-        if prices[i] < buy: 
-            buy = prices[i]
-
-        if prices[i] - buy > max_profit: 
-            max_profit  = prices[i] - buy
-
-    return max_profit
-    
-    
-
-print(bruteforce([7,1,5,3,6,4]))

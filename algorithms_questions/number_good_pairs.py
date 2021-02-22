@@ -25,8 +25,8 @@ def fastersolution(nums):
 
     return pairs
 
-# print(numberIdenticalPairs([1,2,3,1,1,3]))
-# print(numberIdenticalPairs([1,1,1,1]))
-# print(numberIdenticalPairs([1,2,3]))
+print(numberIdenticalPairs([1,2,3,1,1,3]))
+print(numberIdenticalPairs([1,1,1,1]))
+print(numberIdenticalPairs([1,2,3]))
 
 print(fastersolution([1,1,1,1]))
