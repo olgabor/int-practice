@@ -6,9 +6,10 @@ def maxProfit(prices):
 
         if prices[i] > prices[i-1]:
             max_profit += prices[i] - prices[i - 1]
+            print(prices[i] - prices[i - 1])
     return max_profit
 
-
+print(maxProfit([7,1,5,3,6,4]))
 # print(maxProfit([1,2,3,4,5,3,5]))
 # print(maxProfit([1,2,3,4,5]))
 # print(maxProfit([7,6,4,3,1]))
@@ -39,7 +40,7 @@ def max_profit_peak_vallye(prices):
 
     return maxProfit 
 
-print(max_profit_peak_vallye([1,2,3,4,5,3,5]))
+# print(max_profit_peak_vallye([1,2,3,4,5,3,5]))
 # print(max_profit_peak_vallye([1,2,3,4,5]))
 # print(max_profit_peak_vallye([7,6,4,3,1]))
 # print(max_profit_peak_vallye([7,1,5,3,6,4]))
@@ -54,7 +55,7 @@ def testsolutions(prices):
 
     return max_profit 
 
-print(testsolutions([1,2,3,4,5,3,5])) 
+# print(testsolutions([1,2,3,4,5,3,5])) 
 
 
 
@@ -81,4 +82,4 @@ def testmaxProfit(prices):
         print('peak , valley ', peak , valley , maxProfit)
 
     return maxProfit 
-print(testmaxProfit([1,2,3,4,5,3,5]))
+# print(testmaxProfit([1,2,3,4,5,3,5]))
