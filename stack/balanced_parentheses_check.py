@@ -1,4 +1,9 @@
+# Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
+# An input string is valid if:
+
+# Open brackets must be closed by the same type of brackets.
+# Open brackets must be closed in the correct order.
 
 #steps: 
     #scan the string from left to right and every time you see the opening parenthesis push the item to stack
@@ -33,9 +38,10 @@ def balance_check(s):
             
             if (last_open, paren) not in matches: #check if last iten fron the stack and current item in sting both are in matches 
                 return False
-                
+
     return len(stack) == 0 
 
 print(balance_check('[]'))
 print(balance_check('[{{{{((({{{[[[]]]}}})))}}}}]'))
 print(balance_check('[{{{{((({{{[[[]]]}}})))}}}]'))
+print(balance_check('{{[[]]}}'))
