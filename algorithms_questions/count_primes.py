@@ -64,4 +64,4 @@ def countPrimeFast(n):
 print(countPrimeFast(10)) #4
 
 gain = [-4, 2, 3,]
-print([0, gain)
+print([0, gain])

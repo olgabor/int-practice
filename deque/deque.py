@@ -21,8 +21,6 @@ class Deque:
     def isEmpty(self): 
         return self.items == []
     
-
-
 d = Deque()
 print(d.size())
 print(d.isEmpty())

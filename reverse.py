@@ -40,3 +40,18 @@ def reverseTwoPointers(char):
     print(char)
 
 print(reverseTwoPointers(["h","e","l","l","o"]))
+
+#given a string return, write a function to reverse a string in place 
+def reverse_string_in_place(s):
+
+    new = list(s)
+    l , r = 0, len(new) -1
+
+    while l <= r: 
+        new[l] , new[r] = new[r], new[l]
+        l += 1 
+        r -= 1  
+    
+    return ''.join(new)
+
+print(reverse_string_in_place('abcd'))
