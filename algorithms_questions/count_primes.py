@@ -54,7 +54,7 @@ def countPrimeFast(n):
         if isPrime[i]:
             print( 'i:', i , isPrime[i])
             for multiples_of_i in range(i*i, n, i):
-                print( 'multiples_of_i:' ,multiples_of_i , 'i:', i   )
+                print( 'multiples_of_i:', multiples_of_i , 'i:', i )
                 isPrime[multiples_of_i] = False 
         
     return sum(isPrime)
@@ -62,3 +62,6 @@ def countPrimeFast(n):
 # print(countPrimeFast(499979)) #41537 
 
 print(countPrimeFast(10)) #4
+
+gain = [-4, 2, 3,]
+print([0, gain)
