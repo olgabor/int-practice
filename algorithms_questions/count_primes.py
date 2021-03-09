@@ -24,7 +24,7 @@ def countPrime(n):
 
     return count 
 
-# print(countPrime(10)) #4
+print(countPrime(10)) #4
 # print(countPrime(0)) #0
 # print(countPrime(1)) #0
 # print(countPrime(499979)) #0

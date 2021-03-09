@@ -48,10 +48,30 @@ def reverse_string_in_place(s):
     l , r = 0, len(new) -1
 
     while l <= r: 
-        new[l] , new[r] = new[r], new[l]
+        new[l], new[r] = new[r], new[l]
         l += 1 
         r -= 1  
     
     return ''.join(new)
 
 print(reverse_string_in_place('abcd'))
+
+
+def reverse_integer(x):
+
+    res = ''
+    if x < 0: 
+        x = abs(x)
+        res= '-'
+
+    while x > 0: 
+        tmp = x%10
+        n = x // 10 
+        res+= str(tmp)
+        x = n 
+
+    return int(res)
+
+print(reverse_integer(123))
+print(reverse_integer(-123))
+print(reverse_integer(120))

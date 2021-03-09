@@ -11,16 +11,16 @@ def lengthOfLongestSubstring(s):
     while (left < n and right< n): 
         el = s[right]
         if el in m:
-            left = max(left, m[el]+1)
+            left = max(left, m[el]+1) #we need to find the maximum between he left pointer and the current position of the element 
 
-        m[el] = right 
+        m[el] = right
 
         ans = max(ans, right - left +1 )
         right+= 1 
     
     return ans 
 
-# print(lengthOfLongestSubstring('abcdababc'))
+print(lengthOfLongestSubstring('abcdababc'))
 
 #Brute force solution 
 #space complexity = O(n), time complexity O(n2)
@@ -37,7 +37,7 @@ def bruteforce(s):
 
     return ans
 
-print(bruteforce('abcdababc'))
-print(bruteforce('abcabcbb'))
-print(bruteforce('bbbbb'))
-print(bruteforce('pwwkew'))
+# print(bruteforce('abcdababc'))
+# print(bruteforce('abcabcbb'))
+# print(bruteforce('bbbbb'))
+# print(bruteforce('pwwkew'))
