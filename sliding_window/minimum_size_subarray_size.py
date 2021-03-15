@@ -18,27 +18,10 @@
 
 def minimal_length_of_contiguous_subarray(nums, target): 
     output = float('inf')
-    # l = 0
-    # r = 1
-    # cur_window = nums[l] + nums[r]
-
     if sum(nums) < target:
         return 0 
     if target in nums: 
         return 1 
-
-    # while l < len(nums)-1 and r <= len(nums)-1 :
-
-    #     if cur_window < target:
-    #         r += 1
-    #         cur_window = cur_window + nums[r]
-    #     if cur_window >= target and r != len(nums)  :
-    #         output = (r - l) +1 
-    #         # print(output)
-    #         cur_window = cur_window - nums[l]    
-    #         l += 1
-    #     if output <res: 
-    #         output = res
 
     left = 0 
     current_s = 0 

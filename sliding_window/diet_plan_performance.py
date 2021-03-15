@@ -38,10 +38,7 @@ def diet_plan(calories, k, lower, upper):
 
         total = 0
         for i in range(k): 
-            print( l, i)
             total += calories[l + i]
-            print(calories[l+i])
-            print('TOTAL', total)
 
         if total < lower:
             points -= 1 
