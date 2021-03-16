@@ -62,6 +62,4 @@ def intersection_w_pointers(arr1, arr2, arr3):
     return output
 
 
-
 print(intersection_w_pointers(arr1, arr2, arr3))
-

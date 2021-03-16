@@ -25,11 +25,9 @@ def array_intersection(nums1, nums2):
     
     m = {}
     res = []
-  
     if len(nums1) < len(nums2):
         nums2, nums1 = nums1, nums2
 
-      
     for i in range(len(nums1)): 
         m.setdefault(nums1[i], 0)
         m[nums1[i]] += 1 
@@ -38,9 +36,10 @@ def array_intersection(nums1, nums2):
         if nums2[i] in m and m[nums2[i]] != 0: 
             # print(nums2[i])
             res.append(nums2[i])
-            m[nums2[i]] -= 1
+            m[nums2[i]] = 0
 
     return res
+
 
 print(array_intersection([1,2,2,1], [2,2]))
 print(array_intersection([4,9,5],[9,4,9,8,4]))
