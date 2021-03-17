@@ -13,17 +13,17 @@ s = "ababcbacadefegdehijhklij"
 
 def partition_labels(s): 
     output = []
+    # dict comprehension with enumerate 
     m = {char:indx for  indx, char in enumerate(s)}
+
+    #use setdefault in dict to store indexes 
     # m = {}
-    for  index , char in  enumerate(s): 
-        print(char, index)
     # for i in range(len(s)): 
     #     m.setdefault(s[i], 0)
     #     m[s[i]] = i 
 
     start = 0 
     end = 0
-
     i = 0 
     while i <= len(s) -1: 
 
