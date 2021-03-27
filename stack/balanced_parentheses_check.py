@@ -6,7 +6,7 @@
 # Open brackets must be closed in the correct order.
 
 #steps: 
-    #scan the string from left to right and every time you see the opening parenthesis push the item to stack
+    # scan the string from left to right and every time you see the opening parenthesis push the item to stack
     # when we see a closing parenthesis we check whether the last open one is corresponding closing match by opening the element from stack
     # if it is a match, we proceed forward, if not - return False 
     # if the stack is empty we return False , because there is no opening parenthesis associated with this closing one 
@@ -21,14 +21,15 @@ def balance_check(s):
     
     opening = set('([{') #creates a set of opening brackets {'(', '{', '['} 
 
-    matches = set([('(', ')'), ('[',']'), ('{', '}')]) # creates open, closed parenthesis set {('[', ']'), ('(', ')'), ('{', '}')}
+    matches = set([('(', ')'), ('[',']'), ('{', '}')]) #creates open, closed parenthesis set {('[', ']'), ('(', ')'), ('{', '}')}
 
     stack = []
 
     for paren in s: 
-        #is it is an opening - push to stack 
+        #if it is an opening - push to stack 
         if paren in opening:
             stack.append(paren)
+            print(stack)
 
         else: 
             if len(stack) == 0: #if stack is empty - there was no opening parenthesis 
@@ -41,7 +42,7 @@ def balance_check(s):
 
     return len(stack) == 0 
 
-print(balance_check('[]'))
+# print(balance_check('[]'))
 print(balance_check('[{{{{((({{{[[[]]]}}})))}}}}]'))
-print(balance_check('[{{{{((({{{[[[]]]}}})))}}}]'))
-print(balance_check('{{[[]]}}'))
+# print(balance_check('[{{{{((({{{[[[]]]}}})))}}}]'))
+# print(balance_check('{{[[]]}}'))

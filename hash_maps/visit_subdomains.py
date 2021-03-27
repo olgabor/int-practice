@@ -54,5 +54,6 @@ def count_subdomains(inp):
             ans[".".join(frags[i:])] += count
 
         return ["{} {}".format(ct, dom) for dom, ct in ans.items()]
+        
 print(count_subdomains(["9001 discuss.leetcode.com"]))
 print(count_subdomains(["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"]))

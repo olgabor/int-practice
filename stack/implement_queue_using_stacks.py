@@ -1,20 +1,19 @@
+# 232. Implement Queue using Stacks
 #Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).
 
 # Implement the MyQueue class:
-
 # void push(int x) Pushes element x to the back of the queue.
 # int pop() Removes the element from the front of the queue and returns it.
 # int peek() Returns the element at the front of the queue.
 # boolean empty() Returns true if the queue is empty, false otherwise.
 
-
 #steps 
     # stack reverses the order while queue doesn't 
-    # sequence of elements pushed on stack comes back in reversed order when poped
+    # sequence of elements pushed to stack comes back in reversed order when poped
     # two stacks chained together will return elemetns in the same order, since reversed order reversed again is original order 
 
     # use in-stack that we fill when the element is enqueued and dequeue operation takes alements from out-stack
-    # if the out-stack element is empty - we pop all elements from the in-stack and pysh them onto out-stack 
+    # if the out-stack element is empty - we pop all elements from the in-stack and push them to out-stack 
 
 class MyQueue:
 
@@ -24,7 +23,7 @@ class MyQueue:
         """
         self.instack = []
         self.outstack = []
-        
+
 
     def push(self, x: int) -> None:
         """

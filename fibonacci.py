@@ -42,8 +42,8 @@ def fib_recursively(n):
         return 1 
     if n == 2: 
         return 1  
-    else: 
-        outcome +=  fib_recursively(n-1) + fib_recursively(n -2)
+    else:
+        outcome += fib_recursively(n-1) + fib_recursively(n-2)
 
     return outcome
 

@@ -4,8 +4,8 @@
 
 # Input: 
 # Output: [[7,4,1],[8,5,2],[9,6,3]]
+
 matrix = [[1,2,3],[4,5,6],[7,8,9]]
 def rotate_image(matrix): 
     pass 
-
 print(rotate_image(matrix))

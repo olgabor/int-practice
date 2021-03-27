@@ -1,4 +1,4 @@
-#Merge Sorted Array
+# Merge Sorted Array
 # Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
 
 # The number of elements initialized in nums1 and nums2 are m and n respectively. 
@@ -15,25 +15,18 @@
 
 def merge_sorted_array(nums1, nums2,  m, n): 
 
-    nums1_copy = nums1[:]
+    nums1_copy = nums1[:] 
 
     p1 = 0  #read copy 
-    p2 = 0 #read nums2
-    p3 = 0 #write nums1 
+    p2 = 0  #read nums2
+    p3 = 0  #write nums1 
     
     while p3 <= n+m - 1:
-        # print('line 27 ' , p1 , p2 , p3 , nums1, nums1_copy)
-        # if nums1_copy[p1] <= nums2[p2] and p1 < n and p2 < n: 
-        print(p2 >= n, p1 < m )
         if p2 >= n or (p1 < m and nums1_copy[p1] <= nums2[p2]):
-     
-        # if nums1_copy[p1] <= nums2[p2] and p1 <= m and p2 <= m: 
-        #    print('line 35 ' , p1 , p2 , p3 , nums1, nums1_copy)
            nums1[p3] =  nums1_copy[p1]
            p1 +=1
 
         else: 
-        #    print('line 33' , p1 , p2 , p3, nums1 , nums1_copy)
            nums1[p3] = nums2[p2]
            p2 +=1
         p3 += 1
