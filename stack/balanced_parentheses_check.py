@@ -14,35 +14,29 @@
 
 
 def balance_check(s):
-
     #edge case check 
     if len(s)%2 != 0: 
         False 
-    
-    opening = set('([{') #creates a set of opening brackets {'(', '{', '['} 
 
-    matches = set([('(', ')'), ('[',']'), ('{', '}')]) #creates open, closed parenthesis set {('[', ']'), ('(', ')'), ('{', '}')}
-
+    opening = set('([{') #creates a set of opening brackets 
+    matches = set([('(', ')'), ('[',']'), ('{', '}')]) #creates open, closed parenthesis set 
     stack = []
 
     for paren in s: 
-        #if it is an opening - push to stack 
-        if paren in opening:
+        if paren in opening: #if it is an opening - push to stack
             stack.append(paren)
-            print(stack)
-
         else: 
             if len(stack) == 0: #if stack is empty - there was no opening parenthesis 
                 return False 
             
             last_open = stack.pop() #pop the last item from the stack 
             
-            if (last_open, paren) not in matches: #check if last iten fron the stack and current item in sting both are in matches 
-                return False
+            if (last_open, paren) not in matches: #check if last iten fron the stack 
+                return False                      #and current item in sting both are in matches 
 
     return len(stack) == 0 
 
-# print(balance_check('[]'))
+print(balance_check('[]'))
 print(balance_check('[{{{{((({{{[[[]]]}}})))}}}}]'))
-# print(balance_check('[{{{{((({{{[[[]]]}}})))}}}]'))
-# print(balance_check('{{[[]]}}'))
+print(balance_check('[{{{{((({{{[[[]]]}}})))}}}]'))
+print(balance_check('{{[[]]}}'))
