@@ -33,9 +33,9 @@ def reverse(node):
     nextnode = None 
    
     while current: 
-        nextnode = current.nextnode #remember the current node 
-        current.nextnode = previous #assign current node to None 
-        previous, current = current, nextnode #swap the values 
+        nextnode = current.nextnode           # remember the current node 
+        current.nextnode = previous           # assign current node to None 
+        previous, current = current, nextnode # swap the values 
 
     return previous 
 
