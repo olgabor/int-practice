@@ -8,7 +8,6 @@ class Node():
     nodes = [] 
 
     def __init__(self, x): 
-
         self.__class__.nodes.append(x)
         self.value = x 
         self.next = None 
