@@ -18,10 +18,10 @@
 # Example 4:
 # Input: head = [1,0,0,1,0,0,1,1,1,0,0,0,0,0,0]
 # Output: 18880
+
 # Example 5:
 # Input: head = [0,0]
 # Output: 0
-
 
 # Definition for singly-linked list.
 class ListNode:
@@ -39,6 +39,6 @@ class Solution:
         while node.next:
             head = node
             node = node.next
-            nodes +=  str(node.val)
+            nodes += str(node.val)
             
         return int(nodes, 2)

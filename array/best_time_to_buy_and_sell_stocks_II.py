@@ -19,7 +19,7 @@ print(maxProfit([7,1,5,3,6,4]))
 
 #peak and valley approach 
 
-def max_profit_peak_vallye(prices): 
+def max_profit_peak_valley(prices): 
     maxProfit = 0 
     i = 0 
     valley = prices[0]
@@ -40,11 +40,11 @@ def max_profit_peak_vallye(prices):
 
     return maxProfit 
 
-# print(max_profit_peak_vallye([1,2,3,4,5,3,5]))
-# print(max_profit_peak_vallye([1,2,3,4,5]))
-# print(max_profit_peak_vallye([7,6,4,3,1]))
-# print(max_profit_peak_vallye([7,1,5,3,6,4]))
-# print(max_profit_peak_vallye([1, 7, 2, 3, 6, 7, 6, 7]))
+# print(max_profit_peak_valley([1,2,3,4,5,3,5]))
+# print(max_profit_peak_valley([1,2,3,4,5]))
+# print(max_profit_peak_valley([7,6,4,3,1]))
+# print(max_profit_peak_valley([7,1,5,3,6,4]))
+# print(max_profit_peak_valley([1, 7, 2, 3, 6, 7, 6, 7]))
 
 
 def testsolutions(prices): 

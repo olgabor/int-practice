@@ -35,6 +35,8 @@ def isValidSudoku(board):
     columns = [{} for i in range(9)]
     boxes = [{} for i in range(9)]
 
+    print(rows, columns, boxes)
+
     # validate a board
     for i in range(9):
         for j in range(9):
@@ -53,3 +55,4 @@ def isValidSudoku(board):
                     return False         
     return True
 print(isValidSudoku(board))
+print(isValidSudoku(board1))

@@ -31,3 +31,12 @@ print(rotateWith_slicing([1,2,3,4,5,6,7], 3))
 print(rotateWith_slicing([-1,-100,3,99], 2))
 
 
+def rotate_with_insert(arr, k): 
+
+    for i in range(k):
+        arr.insert(0, arr[-1] )
+        arr.pop()
+
+    return arr
+
+print(rotate_with_insert([1,2,3,4,5,6,7], 3))
