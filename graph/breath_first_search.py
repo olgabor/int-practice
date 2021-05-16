@@ -26,7 +26,6 @@ def search(name):
             searched.append(person)
 
     return False
-    
 
 
 print(search('you'))

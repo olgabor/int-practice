@@ -56,8 +56,9 @@ def next_greater_elem_stack(nums1, nums2):
     while stack: #[4,2]                        # for each element in stack that has no pair of smaller element in nums2
         mapping[stack.pop()] = -1              # assign value of  -1 to it 
     
-    for i in range(len(nums1)):               # for each element in nums1 write down the value saved in dict 
+    for i in range(len(nums1)):                # for each element in nums1 write down the value saved in dict 
         res.append(mapping[nums1[i]])
     
     return res
+    
 print(next_greater_elem_stack([4,1,2], [1,3,4,2])) # output [-1, 3, -1]
