@@ -4,10 +4,9 @@ from collections import Counter
 def sort_by_occurrence(inp):
     
     """ fist method: Couner.most_common() + list comprehension """
-    list_by_occurrence_v1  = [  k for k, v in Counter(inp).most_common() for k in [k] * v ] 
+    list_by_occurrence_v1  = [ k for k, v in Counter(inp).most_common() for k in [k] * v ] 
     
-
-    """ second method: Couner.most_common() + list comprehension """
+    """ second method: Couner.most_common() + dict + list comprehension """
     memo = {} 
     list_by_occurrence_v2=[]
     for index, value in enumerate(inp): 

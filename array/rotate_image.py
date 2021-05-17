@@ -7,5 +7,15 @@
 
 matrix = [[1,2,3],[4,5,6],[7,8,9]]
 def rotate_image(matrix): 
-    pass 
+    n = len(matrix[0])
+    for row in range(len(matrix)): 
+        for col in range(row, n): 
+            matrix[row][col], matrix[col][row]  = matrix[col][row] , matrix[row][col]
+
+    print(matrix)
+    for row in range(len(matrix)):
+         for col in range(n//2):
+             matrix[row][col], matrix[row][-col - 1] = matrix[row][-col - 1], matrix[row][col]
+             
+    print(matrix)
 print(rotate_image(matrix))

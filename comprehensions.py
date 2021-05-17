@@ -41,3 +41,11 @@ for n in num:
 
 my_set_coprehension = { n for n in num}
 print(my_set, my_set_coprehension)
+
+# comprehension with Counter to return list by occurrence 
+
+from collections import Counter 
+nums = [4, 5, 3, 5, 2, 3, 5]
+
+nums = [ number for number, occur in Counter(nums).most_common() for number in [number] * occur ]
+print(nums)
