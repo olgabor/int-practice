@@ -27,12 +27,10 @@
     #step 1): append the current ping call to the tail of the sliding window 
     #step 2): starting from the head of the sliding window, we remove the outdated calls, until we come across a still valid ping call.
 
-
 class RecentCounter:
 
     def __init__(self):
         self.items = []
-        
 
     def ping(self, t: int) -> int:
         self.items.append(t)

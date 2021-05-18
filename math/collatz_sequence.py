@@ -22,10 +22,3 @@ while value !=1:
     number = input('type number: ')
     value = collatz(int(number))
     print(value)
-    
-
-    
-
-
-
-
