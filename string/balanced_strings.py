@@ -16,7 +16,7 @@ def balancedString(s):
         if s[i] == 'L': 
             l_counter += 1 
         if l_counter == r_counter: 
-            count+= 1 
+            count+= 1
 
     return count 
 
