@@ -12,7 +12,7 @@ def fib(n):
     if n < 0:
         return 'Type the number larger than 0'
     if n <1: 
-        raise TypeError('Provide a positive integer') 
+        raise TypeError('Provide a positive integer') ``
     if type(n) != int: 
         return 'Type the number larger than 0'
 

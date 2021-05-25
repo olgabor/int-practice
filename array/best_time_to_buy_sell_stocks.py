@@ -1,5 +1,6 @@
 #You are given an array prices where prices[i] is the price of a given stock on the ith day.
-#You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+#You want to maximize your profit by choosing a single day to buy one stock
+#and choosing a different day in the future to sell that stock.
 
 # have the lovest number saved to variable buy as a first item in the array 
 # set profit to 0 

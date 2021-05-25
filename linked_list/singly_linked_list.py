@@ -135,6 +135,7 @@ class LinkedList:
 
         return True 
 
+    # length of the list 
     def get_length(self): 
         node = self.head 
         i = 1 

@@ -13,7 +13,7 @@ def letterCombinations(l = ["a","b","c"]):
             m = k[i] + k[i-1]
             k.append(m)
             count -= 1 
-    # print(len(l))
+
     return k , count 
 
 print(letterCombinations(l = ["a","b","c"]))

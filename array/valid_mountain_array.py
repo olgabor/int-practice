@@ -9,21 +9,22 @@
 
 def validMountainArray(arr):
 
-    if len(arr) < 3:
+    if len(arr) < 3: # array with length less than 3 cant be mount_array 
         return False 
 
     i = 1 
 
-    while i < len(arr) and arr[i] > arr[i-1]:
+    while i < len(arr) and arr[i] > arr[i-1]: # check if the current element is bigger than a previous
         i += 1 
     
-    if i == 1 or i == len(arr):
-        return False 
+    if i == 1 or i == len(arr):               # if after while loop the index is still 1 or it reached the end  
+        return False                          # it means that there were no numbers larger the previous or only larger numbers are in array  
+        
 
-    while i < len(arr) and (arr[i] < arr[i-1]):
+    while i < len(arr) and (arr[i] < arr[i-1]): # check if there are smaller numbers than previous 
         i += 1 
     
-    if i == len(arr):
+    if i == len(arr):                          # if we reached the end of the array - it means it is validMountainArray
         return True 
     else: 
         return False 

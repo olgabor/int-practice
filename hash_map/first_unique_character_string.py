@@ -14,13 +14,13 @@ def fist_unique_characher(s):
         return -1 
 
     m = {}
-    for i in range(len(s)): 
+    for i, b in enumerate(s): 
         m.setdefault(s[i], 0)
         m[s[i]] += 1 
 
     for i in range(len(s)):
         if m[s[i]] == 1: 
-            return i  
+            return s[i]  
 
     return -1  
 
@@ -29,3 +29,4 @@ print(fist_unique_characher("leetcode"))# 0
 print(fist_unique_characher("loveleetcode")) #2
 print(fist_unique_characher("")) #-1 
 print(fist_unique_characher("cc")) #-1 
+print(fist_unique_characher("hello world hi hey")) #-1 

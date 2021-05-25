@@ -8,7 +8,8 @@ def validPalindrome(str):
 
     while start <= end :
 
-        while str[start].isalnum() != True: 
+        while str[start].isalnum() != True:
+            print(str[start])
             start += 1
             
         while str[end].isalnum() != True: 

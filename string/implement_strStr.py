@@ -8,7 +8,6 @@ def strStr(haystack, needle):
      # if needle in haystack: 
     #     return haystack.index(needle) 
 
-
     if len(needle) > len(haystack): 
         return -1 
 

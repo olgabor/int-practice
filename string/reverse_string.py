@@ -40,6 +40,7 @@ def reverseTwoPointers(char):
     print(char)
 
 print(reverseTwoPointers(["h","e","l","l","o"]))
+print(reverseTwoPointers(["h","e","l","l","o"]))
 
 #given a string return, write a function to reverse a string in place 
 def reverse_string_in_place(s):
@@ -55,6 +56,8 @@ def reverse_string_in_place(s):
     return ''.join(new)
 
 print(reverse_string_in_place('abcd'))
+
+print(reverse_string_in_place('hello world'))
 
 
 def reverse_integer(x):
@@ -75,3 +78,12 @@ def reverse_integer(x):
 print(reverse_integer(123))
 print(reverse_integer(-123))
 print(reverse_integer(120))
+
+def reverse_string_recursion(s): 
+
+    if len(s) ==1: return s
+
+    else: return s[-1] + reverse_string_recursion(s[:-1])
+
+print(reverse_string_recursion('hello world'))
+print('helloworld'[:-1])
