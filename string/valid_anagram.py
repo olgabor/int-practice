@@ -44,3 +44,35 @@ def isAnagramSorted(s,t):
 
 print(isAnagramSorted("anagram", "nagaram"))
 print(isAnagramSorted("rat", "car"))
+
+def isAnagram_v2(s,s1): 
+    
+    s = s.replace(' ', '').lower()  
+    s1 = s1.replace(' ', '').lower() 
+    return sorted(s) == sorted(s1) 
+
+print(isAnagram_v2('clint eastwood', 'old west action'))
+
+def isAnagram_v3(s, s1): 
+    count = {}
+
+    for i in range(len(s)): 
+        count.setdefault(s[i] , 0)
+        count[s[i]] += 1 
+    
+    print(count)
+    for i in range(len(s1)):
+        if s1[i] in count: 
+
+            count[s1[i]] -= 1 
+        else:
+            count[s1[i]] = 1 
+
+    for k in count:
+        if count[k] != 0: 
+            print(k)
+            return False
+
+    return True 
+
+print(isAnagram_v3('clint eastwood', 'old westaction'))
