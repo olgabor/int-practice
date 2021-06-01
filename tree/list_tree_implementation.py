@@ -41,4 +41,3 @@ print(instertLeft(r, 4))
 print(instertRight(r, 5))
 print(instertLeft(r, 6))
 print(instertRight(r, 7))
-
