@@ -36,6 +36,3 @@ def func(num):
     return num * func(num - 2)
 
 print(func(8))
-
-s = 'dog'
-print(s.split('dog').join)

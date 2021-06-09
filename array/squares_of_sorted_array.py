@@ -36,3 +36,11 @@ def sortedSquaresBinary(A):
 
 nums = [-4,-1,0,3,10]
 print(sortedSquaresBinary(nums))
+print(sortedSquaresBinary([1,2,3,4,5,6,8,9]))
+
+
+def sorted_array(nums): 
+  sorted_list = [0 for _ in nums]
+  print(sorted_list)
+
+print(sorted_array([1,2,3,4,5,6,8,9]))

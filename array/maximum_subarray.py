@@ -54,7 +54,8 @@ def maxSubArraySlidingWindow(nums):
 print(maxSubArraySlidingWindow([-2, 1,-3,4,-1,2,1,-5,4]))
 print(maxSubArraySlidingWindow([-1]))
 
-# Given an array of positive numbers and a positive number ‘k,’ find the maximum sum of any contiguous subarray of size ‘k’.
+# Given an array of positive numbers and a positive number ‘k,’ 
+# find the maximum sum of any contiguous subarray of size ‘k’.
 
 # Example 1:
 # Input: [2, 1, 5, 1, 3, 2], k=3 
@@ -76,16 +77,30 @@ def maxSumSubArray(nums, k):
     
     max_sum = 0 
     curr_sum = 0 
-    for i in range(3): 
+    for i in range(k): 
         curr_sum += nums[i]
+
 
     i = 0 
     while i < (len(nums) -3): 
-        curr_sum = (curr_sum - nums[i]) + nums[i +k ]
+        curr_sum = (curr_sum - nums[i]) + nums[i + k]
         max_sum = max(curr_sum, max_sum)
         i += 1 
 
     return max_sum 
+print(maxSumSubArray([2, 1, 5, 1, 3, 2], 3))
 
-# print(maxSumSubArray([2, 1, 5, 1, 3, 2], 3))
-# print(maxSumSubArray([2, 1, 5, 1, 3, 2], 3))
+def max_sum_sub_array_brute_force(nums, k): 
+    max_sum = 0 
+
+ 
+    for i in range(len(nums)): 
+        cur_sum = 0 
+        for j in range(i, k +1 ): 
+            cur_sum += nums[j]
+            max_sum = max(cur_sum , max_sum)
+    
+    return max_sum
+
+
+print(max_sum_sub_array_brute_force([2, 1, 5, 1, 3, 2], 3))

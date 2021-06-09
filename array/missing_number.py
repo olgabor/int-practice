@@ -74,3 +74,29 @@ def missingNumbSort(nums):
 # print(missingNumbSort([1,2]))
 # print(missingNumbSort([1,2,3]))
 # print(missingNumbSort([0,1])) 
+
+# find the missing number in second array 
+
+def missing_number(arr1, arr2): 
+
+    d = {}
+    
+    for num in arr1: 
+        d.setdefault(num, 0)
+        d[num] +=1
+    print(d)
+
+    for num in arr2: 
+        if d[num] == 0: 
+            return num
+        else: 
+            d[num] -= 1 
+
+print(missing_number([5,5,7], [5,5,7,7])) 
+def missing_number_v2(arr1, arr2):
+
+    return sum(arr2) - sum(arr1) 
+
+
+print(missing_number_v2([5,5,7], [5,5,7,7])) 
+
